@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://lib.lgkonline.com/lgk-icons/style.min.css">
+    <link rel="stylesheet" href="https://lib.lgkonline.com/pill-menu/style.min.css">
+    <style type="text/css">
+        body {
+            background-color: black;
+            color: white;
+            font-size: 2rem;
+            animation: bg 10s infinite;
+        }
+
+        .logo {
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .love {
+            animation: love 10s infinite;
+        }
+
+        .top {
+            margin-left: 1rem;
+            margin-top: 1rem;
+        }
+
+        .bottom {
+            position: fixed;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateY(-50%);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            transition: color 3s;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        @keyframes bg {
+
+            0%,
+            100% {
+                background-color: black;
+            }
+
+            50% {
+                background-color: #263238;
+            }
+        }
+
+        @keyframes love {
+
+            0%,
+            100% {
+                color: red;
+            }
+
+            50% {
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lgk-pill">
+        <iframe class="lgk-pill-content" src=""></iframe>
+    </div>
+    <div class="lgk-pill-btn">
+        <span class="lgk-pill-icon"></span>
+    </div>
+    <div class="lgk-pill-wrapper"></div>
+
+    <div class="top">
+        <a href="https://twitter.com/lgkonline" target="_blank" rel="noopener"><span class="icon-twitter"></span></a>
+    </div>
+
+    <div class="logo">
+        <span class="love">love</span>for.dev
+    </div>
+
+    <div class="bottom">
+        <a href="https://lgk.io" target="_blank" rel="noopener"><span class="icon-lgk-filled"></span></a>
+    </div>
+
+    <script src="https://lib.lgkonline.com/pill-menu/script.min.js"></script>
+</body>
+
+</html>
